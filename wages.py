@@ -16,7 +16,10 @@ pay = weeklyDosh(hours, wage)
 
 print(f"Total pay: ${pay:.2f} ")
 
-if hours > 40:
-    print('and you did {} hours overtime.'.format(int(hours)))
+if hours > 41:
+    print('and you did {} hours overtime.'.format(int(hours -40)))
+elif hours == 41:
+    print('and you did 1 hour of overtime.')
+
 
 
